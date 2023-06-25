@@ -10,6 +10,7 @@ WHITE = (255, 255, 255)
 YELLOW = (255, 255, 0)
 BLUE = (100, 149, 237)
 RED = (188, 39, 50)
+DARK_GREY = (80, 78, 81)
 
 class Planet:
     AU = 149.6e6 * 1000
@@ -34,6 +35,7 @@ class Planet:
     def draw(self, win):
         x = self.x * self.SCALE + WIDTH / 2
         y = self.y * self.SCALE + HEIGHT / 2
+        pygame.draw.circle(win, self.color, (x,y), self.radius)
      
 
 
@@ -48,7 +50,12 @@ def main():
 
     mars = Planet(-1.524 * Planet.AU, 0, 12, RED, 6.39 * 10**23)
 
-    planets = [sun, earth, mars]
+    mercury = Planet(0.387 * Planet.AU, 0, 8, DARK_GREY, 3.3 * 10**23)
+
+    venus = Planet(0.723 * Planet.AU, 0, 14, WHITE, 4.8685 * 10**24)
+    
+    planets = [sun, earth, mars, mercury, venus]
+
     
     while run:
         clock.tick(60)
