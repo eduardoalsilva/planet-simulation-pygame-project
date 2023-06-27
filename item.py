@@ -2,22 +2,18 @@ import math
 import pygame
 pygame.init()
 
-
- 
-
-
-
-
 class Planet:
     AU = 149.6e6 * 1000
     G = 6.67428e-11
-    SCALE = 250 / AU
+    scale = 250 / AU
     TIMESTEP = 3600 * 24
     WHITE = (255, 255, 255)
     YELLOW = (255, 255, 0)
     BLUE = (100, 149, 237)
     RED = (188, 39, 50)
     DARK_GREY = (80, 78, 81)
+    BROWN = (205, 127, 50)
+    GREEN = (0, 255, 0)
     WIDTH, HEIGHT = 800, 800
     WIN = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Planet Simulation")
@@ -38,15 +34,15 @@ class Planet:
         self.y_vel = 0
 
     def draw(self, win):
-        x = self.x * self.SCALE + self.WIDTH / 2
-        y = self.y * self.SCALE + self.HEIGHT / 2
+        x = self.x * self.scale + self.WIDTH / 2
+        y = self.y * self.scale + self.HEIGHT / 2
 
         if len(self.orbit) > 2:
             updated_points = []
             for point in self.orbit:
                 x, y = point
-                x = x * self.SCALE + self.WIDTH / 2
-                y = y * self.SCALE + self.HEIGHT / 2
+                x = x * self.scale + self.WIDTH / 2
+                y = y * self.scale + self.HEIGHT / 2
                 updated_points.append((x, y))
 
             pygame.draw.lines(win, self.color, False, updated_points, 2)
