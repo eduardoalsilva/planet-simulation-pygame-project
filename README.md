@@ -4,7 +4,7 @@ Planet Simulation is a project based on a tutorial from <a href="https://www.you
 
 ## Instructions
 
-Open internal.py for the internal Solar System or external.py for the external Solar System.
+Open and run internal.py for the internal Solar System or external.py for the external Solar System.
 
 ## Installation
 
