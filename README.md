@@ -8,7 +8,7 @@ Open internal.py for the internal Solar System or external.py for the external S
 
 ## Installation
 
-For make this project work you need to install Python 3 and pygame library.
+To make this project work you need to install Python 3 and pygame library.
 
 To install Python 3 go to https://www.python.org/downloads/
 
