@@ -1,6 +1,6 @@
 # Planet Simulation
 
-Planet Simulation is a project based on a tutorial from <a href="https://www.youtube.com/@TechWithTim">Tech With Tim YouTube Channel</a>. This project simulates the Solar System in 2 separeted files: one for internal Solar System and other for the external one.
+Planet Simulation is a project based on a tutorial from <a href="https://www.youtube.com/@TechWithTim">Tech With Tim YouTube Channel</a>. This project simulates the Solar System in 2 separeted files: one for the internal Solar System and other for the external one.
 
 ## Instructions
 
